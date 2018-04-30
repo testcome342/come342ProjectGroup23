@@ -1,11 +1,11 @@
 package homework2;
 
-public class Campaign implements AssignStaffUI 
-{	private int campaignID; 
-	private String campaignTitle;
-	private double estimatedCost;
-	private double actualCost;
-	private int advertisementID;
+public class Campaign implements AssignStaffUI , NewCampaignUI
+{	int campaignID; 
+	String campaignTitle;
+	double estimatedCost;
+	double actualCost;
+	int advertisementID;
 	public Campaign() {
 	}
 	public void uiCampaign() {
@@ -45,5 +45,12 @@ public class Campaign implements AssignStaffUI
 	}
 	@Override
 	public void addNewStaff() {		
+	}
+	public void addNewCampaign() {
+		Campaign newCampaign= new Campaign();
+		System.out.println("New Campaign Information: "
+							+ newCampaign.campaignTitle+ "\n" + newCampaign.campaignID
+							+ "\n" + newCampaign.estimatedCost + "\n" + newCampaign.actualCost 
+							+ "\n" + newCampaign.advertisementID+ "\n");
 	}
 }

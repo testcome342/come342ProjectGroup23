@@ -1,5 +1,6 @@
 package homework2;
-public class Client {
+public class Client implements NewCampaignUI 
+{
 	private int clientID;
 	private String clientName;
 	private String clientSurname;
@@ -45,6 +46,14 @@ public class Client {
 				           client1.clientSurname + "\n"  + client1.clientAddress + "\n" +client1.clientPhone
 				           + "\n" + client1.clientMail + "\n");
 
+	}
+	@Override
+	public void addNewCampaign() {
+		Campaign newCampaign= new Campaign();
+		System.out.println("New Campaign Information: "
+							+ newCampaign.campaignTitle+ newCampaign.campaignID
+							+newCampaign.estimatedCost +newCampaign.actualCost 
+							+ newCampaign.advertisementID+ "\n");
 	}
 	
 }

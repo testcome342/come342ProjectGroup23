@@ -34,5 +34,8 @@ public class main
 		Staff additionStaff=new Staff();
 		additionStaff.addNewStaff();
 		
+		Campaign additionCampaign=new Campaign();
+		additionCampaign.addNewCampaign();
+		
 	}
 }
