@@ -40,12 +40,10 @@ public class Client implements NewCampaignUI
 		this.clientMail=clientMail;
 	}
 	public void addNewClient() {
-		// TODO Auto-generated method stub
-		Client client1= new Client();
-		System.out.println("Information of new Client:" + client1.clientID + "\n" + client1.clientName + "\n" + 
-				           client1.clientSurname + "\n"  + client1.clientAddress + "\n" +client1.clientPhone
-				           + "\n" + client1.clientMail + "\n");
-
+		Client clientnew= new Client();
+		System.out.println("Information of new Client:" + clientnew.clientID + "\n" + clientnew.clientName + "\n" + 
+							clientnew.clientSurname + "\n"  + clientnew.clientAddress + "\n" +clientnew.clientPhone
+				           + "\n" + clientnew.clientMail + "\n");
 	}
 	@Override
 	public void addNewCampaign() {
@@ -55,5 +53,6 @@ public class Client implements NewCampaignUI
 							+newCampaign.estimatedCost +newCampaign.actualCost 
 							+ newCampaign.advertisementID+ "\n");
 	}
+	
 	
 }
